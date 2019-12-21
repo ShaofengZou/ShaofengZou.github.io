@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>一个对花季少女去噪的故事</title>
+      <link href="/2019/12/21/%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%8A%B1%E5%AD%A3%E5%B0%91%E5%A5%B3%E5%8E%BB%E5%99%AA%E7%9A%84%E6%95%85%E4%BA%8B/"/>
+      <url>/2019/12/21/%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%8A%B1%E5%AD%A3%E5%B0%91%E5%A5%B3%E5%8E%BB%E5%99%AA%E7%9A%84%E6%95%85%E4%BA%8B/</url>
+      
+        <content type="html"><![CDATA[<p>时维三月，为营毕设，寝食俱废，得暇辄坐于案头，噼里啪啦，狂敲代码。己亥年冬日，余复观之，喜而撰文以记之。</p><p>下面讲述一个花季带噪少女经过我的fucking idiot denoising一步步走向大红大紫的心路历程。</p><p><strong>甲</strong>・美丽少女</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga4980whhuj30bz0c1tf7.jpg" style="zoom:80%;"><p><strong>乙</strong>・加噪少女</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga499i4pudj30bu0byakw.jpg" style="zoom:80%;"><p><strong>丙</strong>・石化少女</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga499mycz6j3098096423.jpg"><p><strong>丁</strong>・发红少女</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga499ytwmpj309d09h0uk.jpg"><p><strong>戊</strong>・大红大紫</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga49a5djtzj309c08zn0z.jpg"><p><strong>己</strong>・红的发紫</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga49aatj6ij309709agox.jpg"><p><strong>庚</strong>・红的只剩帽子</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga49ag9toxj309609743f.jpg"><p><strong>辛</strong>・突然变紫</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga49al28xbj309909c79v.jpg"><p><strong>壬</strong>・再也回不到从前的模样</p><img src="http://ww1.sinaimg.cn/large/007IF2qIly1ga49aqtfmwj309a09awko.jpg"><p>其中奥义，皆为自己尝试使用U-net，以正态分布的噪声为输入，每轮迭代过程中添加均与分布的噪声作为扰动，参考图像是单张加噪后的图像，多轮迭代过程中，网络将逐渐重构出加噪图像(类似参考图像)。</p><p>在重构的过程中将先学会图像的低频分量，因为相对噪声等高频信号相对容易拟合，在此过程中可以获得相对较为干净的图像，即可实现去噪的效果。</p><p>该思想出自<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.pdf" target="_blank" rel="noopener">Deep Image Prior</a>。</p><p>上述效果源于我使用U-net复现该想法时的重构输出图像。</p><p>显然，Bug in my code Ծ‸Ծ</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Coding cookie </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Keras Minist Recognition</title>
       <link href="/2019/12/21/Keras-Minist-Recognition/"/>
       <url>/2019/12/21/Keras-Minist-Recognition/</url>
@@ -14,7 +33,7 @@
       
         <tags>
             
-            <tag> Keras Minist Recognition 手写数字体识别 </tag>
+            <tag> Classification </tag>
             
         </tags>
       
