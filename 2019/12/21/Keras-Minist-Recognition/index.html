@@ -56,32 +56,50 @@
   };
 </script>
 
-  <meta name="description" content="Phd student, forcus on deep learning">
-<meta name="keywords" content="Deep learning and Image process">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shaofengzou&#39;s Blog">
-<meta property="og:url" content="http://www.shaofengzou.com/index.html">
+  <meta name="description" content="Keras Minist Recognition 手写数字体识别 Author: ShaofengZou  Kaggle ID: 1969608 Contact: zousf19@mails.tsinghua.edu.cn I. Introduction  Keras Inplement Using CNN Architecture:  Input -&amp;gt; [ Conv2D -&amp;gt; BN">
+<meta name="keywords" content="Keras Minist Recognition 手写数字体识别">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keras Minist Recognition">
+<meta property="og:url" content="http://www.shaofengzou.com/2019/12/21/Keras-Minist-Recognition/index.html">
 <meta property="og:site_name" content="Shaofengzou&#39;s Blog">
-<meta property="og:description" content="Phd student, forcus on deep learning">
+<meta property="og:description" content="Keras Minist Recognition 手写数字体识别 Author: ShaofengZou  Kaggle ID: 1969608 Contact: zousf19@mails.tsinghua.edu.cn I. Introduction  Keras Inplement Using CNN Architecture:  Input -&amp;gt; [ Conv2D -&amp;gt; BN">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46xlwf54j30a70a3gle.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46s9e3emj306w1hg76d.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46s9bbvbj30xc0dw0tw.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46s9b9spj30hs0dcaan.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46s9eh0jj31h60jrk0s.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46s9bg11j30x10453yi.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46s9bbvbj30xc0dw0tw.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46uttsm8j30xc0dwmyd.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46uyhcduj30xc0dwdgy.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46vcmjl6j30xc0dwmy8.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46vfryf8j30xc0dw0u3.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46vjgf3sj30xc0dwab6.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46vp5n7tj30xc0dwab8.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46vt6s76j30xc0dwt9w.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46vx7qopj30xc0dw0tw.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46w1dl4yj30xc0dwt9w.jpg">
+<meta property="og:updated_time" content="2019-12-21T04:16:31.645Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shaofengzou&#39;s Blog">
-<meta name="twitter:description" content="Phd student, forcus on deep learning">
-  <link rel="canonical" href="http://www.shaofengzou.com/">
+<meta name="twitter:title" content="Keras Minist Recognition">
+<meta name="twitter:description" content="Keras Minist Recognition 手写数字体识别 Author: ShaofengZou  Kaggle ID: 1969608 Contact: zousf19@mails.tsinghua.edu.cn I. Introduction  Keras Inplement Using CNN Architecture:  Input -&amp;gt; [ Conv2D -&amp;gt; BN">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/007IF2qIly1ga46xlwf54j30a70a3gle.jpg">
+  <link rel="canonical" href="http://www.shaofengzou.com/2019/12/21/Keras-Minist-Recognition/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Shaofengzou's Blog</title>
+  <title>Keras Minist Recognition | Shaofengzou's Blog</title>
   
 
 
@@ -192,12 +210,13 @@
 
           <div id="content" class="content">
             
+
   <div id="posts" class="posts-expand">
-        <article itemscope itemtype="http://schema.org/Article">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block home">
+  <div class="post-block post">
     <link itemprop="mainEntityOfPage" href="http://www.shaofengzou.com/2019/12/21/Keras-Minist-Recognition/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -210,9 +229,8 @@
       <meta itemprop="name" content="Shaofengzou's Blog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/12/21/Keras-Minist-Recognition/" class="post-title-link" itemprop="url">Keras Minist Recognition</a>
+        <h1 class="post-title" itemprop="name headline">Keras Minist Recognition
+
           
         </h1>
 
@@ -236,6 +254,14 @@
           
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
         </div>
       </header>
@@ -246,7 +272,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong>Keras Minist Recognition 手写数字体识别</strong></p>
+        <p><strong>Keras Minist Recognition 手写数字体识别</strong></p>
 <p><strong>Author:</strong> ShaofengZou </p>
 <p><strong>Kaggle ID:</strong> 1969608</p>
 <p><strong>Contact:</strong> zousf19@mails.tsinghua.edu.cn</p>
@@ -538,286 +564,75 @@
 <li>防止过拟合，还可以设计回调函数，根据验证集的测试精度来降低学习率或者停止迭代，并根据验证集的准确率来保存最佳的模型</li>
 </ol>
 
-        
-      
     </div>
 
     
     
     
-      <footer class="post-footer">
-          <div class="post-eof"></div>
         
-      </footer>
+      
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Shaofeng Zou WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="Shaofeng Zou Alipay">
+        <p>Alipay</p>
+      </div>
+
   </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://www.shaofengzou.com/2019/09/26/刘亦菲/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Shaofeng Zou">
-      <meta itemprop="description" content="Phd student, forcus on deep learning">
-      <meta itemprop="image" content="http://ww1.sinaimg.cn/large/007IF2qIly1g9wbt9lkwij31400u04ad.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Shaofengzou's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/09/26/刘亦菲/" class="post-title-link" itemprop="url">刘亦菲</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-09-26 19:48:34" itemprop="dateCreated datePublished" datetime="2019-09-26T19:48:34+08:00">2019-09-26</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-21 11:39:12" itemprop="dateModified" datetime="2019-12-21T11:39:12+08:00">2019-12-21</time>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</div>
 
       
-          <h3 id="oh-my-God"><a href="#oh-my-God" class="headerlink" title="oh my God"></a>oh my God</h3>
-          <!--noindex-->
+
+      <footer class="post-footer">
           
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/09/26/刘亦菲/#more" rel="contents">
-                Read more &raquo;
-              </a>
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Keras-Minist-Recognition-手写数字体识别/" rel="tag"># Keras Minist Recognition 手写数字体识别</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/09/26/刘亦菲/" rel="next" title="刘亦菲">
+                  <i class="fa fa-chevron-left"></i> 刘亦菲
+                </a>
+              
             </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
+            <span class="post-nav-divider"></span>
 
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://www.shaofengzou.com/2019/09/26/Blind-Denoising-Method/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Shaofeng Zou">
-      <meta itemprop="description" content="Phd student, forcus on deep learning">
-      <meta itemprop="image" content="http://ww1.sinaimg.cn/large/007IF2qIly1g9wbt9lkwij31400u04ad.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Shaofengzou's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/09/26/Blind-Denoising-Method/" class="post-title-link" itemprop="url">Blind Denoising Method</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
+            <div class="post-nav-prev post-nav-item">
               
-                
-              
-
-              <time title="Created: 2019-09-26 19:23:08 / Modified: 20:10:54" itemprop="dateCreated datePublished" datetime="2019-09-26T19:23:08+08:00">2019-09-26</time>
-            </span>
-          
-            
-
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="A-CNN-Based-Blind-Denoising-Method-for-Endoscopic-Images"><a href="#A-CNN-Based-Blind-Denoising-Method-for-Endoscopic-Images" class="headerlink" title="A CNN-Based Blind Denoising Method for Endoscopic Images"></a>A CNN-Based Blind Denoising Method for Endoscopic Images</h2>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/09/26/Blind-Denoising-Method/#more" rel="contents">
-                Read more &raquo;
-              </a>
             </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
+          </div>
         
       </footer>
+    
   </div>
   
   
   
   </article>
 
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://www.shaofengzou.com/2019/09/26/Android-Style-Transfer/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Shaofeng Zou">
-      <meta itemprop="description" content="Phd student, forcus on deep learning">
-      <meta itemprop="image" content="http://ww1.sinaimg.cn/large/007IF2qIly1g9wbt9lkwij31400u04ad.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Shaofengzou's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/09/26/Android-Style-Transfer/" class="post-title-link" itemprop="url">Android Style Transfer</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-09-26 17:12:47" itemprop="dateCreated datePublished" datetime="2019-09-26T17:12:47+08:00">2019-09-26</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-21 11:48:04" itemprop="dateModified" datetime="2019-12-21T11:48:04+08:00">2019-12-21</time>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Android-Style-Transfer"><a href="#Android-Style-Transfer" class="headerlink" title="Android-Style-Transfer"></a>Android-Style-Transfer</h2><p>An Android app built with an artistic style transfer neural network</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/09/26/Android-Style-Transfer/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
   </div>
-  
-  
-  
-  </article>
-
-    
-  </div>
-
-  
 
 
           </div>
@@ -836,6 +651,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -848,6 +668,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#I-Introduction"><span class="nav-number">1.</span> <span class="nav-text">I. Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#I-设计方案"><span class="nav-number">2.</span> <span class="nav-text">I. 设计方案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#i-数据准备"><span class="nav-number">2.1.</span> <span class="nav-text">i. 数据准备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ii-构建CNN模型"><span class="nav-number">2.2.</span> <span class="nav-text">ii. 构建CNN模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#iii-CNN模型训练和测试"><span class="nav-number">2.3.</span> <span class="nav-text">iii. CNN模型训练和测试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#iv-预测和提交预测结果"><span class="nav-number">2.4.</span> <span class="nav-text">iv. 预测和提交预测结果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#II-对比实验"><span class="nav-number">3.</span> <span class="nav-text">II. 对比实验</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#i-参数选择"><span class="nav-number">3.1.</span> <span class="nav-text">i. 参数选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ii-loss变化和accuracy变化曲线"><span class="nav-number">3.2.</span> <span class="nav-text">ii. loss变化和accuracy变化曲线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#iii-对比实验总结"><span class="nav-number">3.3.</span> <span class="nav-text">iii. 对比实验总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#III-问题思考"><span class="nav-number">4.</span> <span class="nav-text">III. 问题思考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IV-心得体会"><span class="nav-number">5.</span> <span class="nav-text">IV. 心得体会</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
